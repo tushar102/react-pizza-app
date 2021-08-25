@@ -7,7 +7,7 @@ const SingleProduct = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch(`/api/products/${params._id}`)
+        fetch(`https://ecom-rest-apis.herokuapp.com/api/products/${params._id}`)
         .then(res => res.json())
         .then(product => {
             setProduct(product);
